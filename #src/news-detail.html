@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css">
+<body>
+<div id="wrapper" class="wrapper">
+@@include('_svg_incloud.html')
+@@include('_header.html')
+<div class="wrapper-body wrapper-body--detail">
+  @@include('_breadcrumbs.html', {
+    'link_1': 'Главная',
+    'link_2': 'Новость детальная'
+  })
+  <section class="wrapper-content wrapper-content--mb-72">
+    <div class="container">
+      <div class="news">
+        <h1 class="news__title title-page">
+          Шины Nexen будут заводской комплектацией Audi A3
+        </h1>
+        <div class="news-detail">
+          <div class="news-detail__img"
+                style="background-image: url('./img/news/9.png');"
+          ></div>
+        </div>
+        <div class="news-detail__info">
+          <p class="news-detail__info-txt">
+            Audi одобрила три шины Nexen для установки на новые модели A3 Audi одобрила три шины Nexen для установки на новые модели A3 Audi одобрила три шины Nexen для установки на новые модели A3 Audi одобрила три шины Nexen для установки на новые модели A3 Audi одобрила три шины Nexen для установки на новые модели A3 Audi одобрила три шины Nexen для установки на новые модели A3 Audi одобрила три шины Nexen для установки на новые модели A3 Audi одобрила три шины Nexen для установки на новые модели A3
+          </p>
+          <time class="news-detail__info-date color-secondary">
+            18.02.2021
+          </time>
+        </div>
+      </div>
+      <p>
+        <a href="#" class="link link-back arr-right">
+          Вернуться к новостям
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+@@include('_footer.html')
+</div>
+
+<script src="js/script.js"></script>
+
+</html>

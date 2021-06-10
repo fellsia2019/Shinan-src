@@ -7,284 +7,282 @@
     <link rel="stylesheet" href="css/style.min.css">
 <body>
 <div id="wrapper" class="wrapper">
-  @@include('_svg_incloud.html')
-  
-  @@include('_header.html')
-  <div class="wrapper-body wrapper-body--detail">
-    @@include('_breadcrumbs.html', {
-      'link_1': 'Главная',
-      'link_2': 'Скупка шин'
-    })
-    <section class="wrapper-content wrapper-content--mb-72">
-      <div class="contacts contacts--right contacts--center">
-        <div class="contacts__img">
-          <div class="contacts__img-item"
-               style="background-image: url('./img/contacts/1.png');"
-          ></div>
-        </div>
-        <div class="contacts__content contacts__content--with-form">
-          <h2 class="contacts__content-title-main title-main">
-            Скупка БУ шин
-          </h2>
-          <h3 class="contacts__content-subtitle">
-            У вас есть шины БУ?
-          </h3>
-          <p class="contacts__content-txt">
-            Приедем, заберем и заплатим за одну шину до <b>7 000 рублей!</b>
-            Узнайте, сколько денег вы получите!
-          </p>
-          <form class="callback-form contacts__content-form">
+@@include('_svg_incloud.html')
+@@include('_header.html')
+<div class="wrapper-body wrapper-body--detail">
+  @@include('_breadcrumbs.html', {
+    'link_1': 'Главная',
+    'link_2': 'Скупка шин'
+  })
+  <section class="wrapper-content wrapper-content--mb-72">
+    <div class="contacts contacts--right contacts--center">
+      <div class="contacts__img">
+        <div class="contacts__img-item"
+              style="background-image: url('./img/contacts/1.png');"
+        ></div>
+      </div>
+      <div class="contacts__content contacts__content--with-form">
+        <h2 class="contacts__content-title-main title-main">
+          Скупка БУ шин
+        </h2>
+        <h3 class="contacts__content-subtitle">
+          У вас есть шины БУ?
+        </h3>
+        <p class="contacts__content-txt">
+          Приедем, заберем и заплатим за одну шину до <b>7 000 рублей!</b>
+          Узнайте, сколько денег вы получите!
+        </p>
+        <form class="callback-form contacts__content-form">
+          <div class="callback-form__item">
+            <input
+              type="text"
+              class="callback-form__item-input input"
+              name="callback-name"
+              placeholder="Ваше имя"
+            >
+            </div>
             <div class="callback-form__item">
               <input
-               type="text"
-               class="callback-form__item-input input"
-               name="callback-name"
-               placeholder="Ваше имя"
-             >
-             </div>
-             <div class="callback-form__item">
-               <input
-                 type="tel"
-                 class="callback-form__item-input input"
-                 name="callback-name"
-                 placeholder="Ваш телефон *"
-                 data-js="input-tel"
-               >
-             </div>
-             <div class="callback-form__item">
-               <textarea
-                 class="callback-form__item-textarea textarea"
-                 name="callback-name"
-                 placeholder="Краткий комментарий к заявке"
-               ></textarea>
-             </div>
-             <div class="callback-form__item callback-form__item--checkbox">
-               <div class="checkbox callback-form__item-checkbox">
-                 <input
-                   type="checkbox"
-                   name="callback-checkbox"
-                   class="checkbox__input"
-                   id="checkbox__input"
-                 >
-                 <label for="checkbox__input" class="checkbox__label color-secondary text-nr">
-                   Я согласен(а) на обработку персональных данных <a href="#" class="link-bot color-main">подробнее</a>
-                 </label>
-               </div>
-             </div>
-             <div class="callback-form__item">
-               <button type="submit" class="callback-form__button btn btn-nr btn-danger">
-                 Отправить заявку
-               </button>
-             </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="wrapper-content wrapper-content--mt-104 wrapper-content--mb-72">
-      <div class="container">
-        <div class="detail">
-          <div class="detail__main">
-            <div class="detail__main-item content">
-              <h2 class="content__title title-lg">
-                Как заработать на шинах?
-              </h2>
-              <p class="content__txt color-secondary">
-                Где найти новый источник дохода? В старых автошинах: воспользоваться услугой скупка шин бу от компании Shina N!
-              </p>
-              <p class="content__txt color-secondary">
-                Многие бережливые автовладельцы складируют использованные шины в гаражах, на балконах, на садовых участках. А что еще делать? Выбросить – жалко, искать покупателей – долго и хлопотно. Тогда мы найдем вас сами! Просто напишите в WhatsApp, отправьте заявку или позвоните, чтобы покупатели из компании Shina N приехали к вам и хорошо заплатили за ненужные шины бу, в зависимости от их марки и состояния. Количество от 1 штуки!
-              </p>
+                type="tel"
+                class="callback-form__item-input input"
+                name="callback-name"
+                placeholder="Ваш телефон *"
+                data-js="input-tel"
+              >
             </div>
-            <div class="detail__main-item content">
-              <h2 class="content__title title-lg">
-                Цены на скупку шин в СВАО Москвы
-              </h2>
-              <table>
-                <thead>
-                  <tr>
-                    <td>
-                      №
-                    </td>
-                    <td>
-                      Радиус
-                    </td>
-                    <td>
-                      Цена, руб / 1шт
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      1
-                    </td>
-                    <td>
-                      R13
-                    </td>
-                    <td>
-                      до 500
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      2
-                    </td>
-                    <td>
-                      R14
-                    </td>
-                    <td>
-                      до 750
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      3
-                    </td>
-                    <td>
-                      R15
-                    </td>
-                    <td>
-                      до 1 500
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      4
-                    </td>
-                    <td>
-                      R16
-                    </td>
-                    <td>
-                      до 2 000
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      5
-                    </td>
-                    <td>
-                      R17
-                    </td>
-                    <td>
-                      до 3 500
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      6
-                    </td>
-                    <td>
-                      R18
-                    </td>
-                    <td>
-                      до 4 000
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      7
-                    </td>
-                    <td>
-                      R19
-                    </td>
-                    <td>
-                      до 4 500
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      8
-                    </td>
-                    <td>
-                      R20-22
-                    </td>
-                    <td>
-                      до 7 000
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="content__txt">
-                На расценки, по которым ведется скупка автомобильных шин, влияет и временной фактор: например, если вы сдаете покрышки для зимы в холодное время года, мы примем их по более высокой стоимости, чем в апреле-июне. Для летних шин аналогичная ситуация.
-              </p>
+            <div class="callback-form__item">
+              <textarea
+                class="callback-form__item-textarea textarea"
+                name="callback-name"
+                placeholder="Краткий комментарий к заявке"
+              ></textarea>
             </div>
-            <div class="detail__main-item ">
-              <h2 class="detail__main-title title-lg">
-                От чего зависит стоимость скупки автомобильных шин?
-              </h2>
-              <ul class="list-unorder list-unorder--checked">
-                <li class="list-unorder__item text-lg">
-                  Насколько сильно и равномерно/неравномерно изношены шины.
-                </li>
-                <li class="list-unorder__item text-lg">
-                  Под каким брендом, в каком году выпущен товар.
-                </li>
-                <li class="list-unorder__item text-lg">
-                  Радиус, наличие пары, сезонность резины, сохранность шипов.
-                </li>
-              </ul>
-            </div>
-            <div class="detail__main-item">
-              <h2 class="detail__main-title title-lg">
-                Какие ограничения действуют на выкуп шин б/у?
-              </h2>
-              <ul class="list-unorder list-unorder--unchecked">
-                <li class="list-unorder__item text-lg">
-                  Наличие грыж, порезов на боковых поверхностях, множественных проколов протектора (свыше 5) или следов ремонта данных повреждений.
-                </li>
-                <li class="list-unorder__item text-lg">
-                  Особенности износа протектора: с отдельными проплешинами и потертостями, скосами, до самого индикатора.
-                </li>
-                <li class="list-unorder__item text-lg">
-                  Дата выпуска более 7 лет назад.
-                </li>
-              </ul>
-            </div>
-            <div class="detail__main-item">
-              <h2 class="detail__main-title title-lg">
-                Как сдать старые шины в Shina N?
-              </h2>
-              <ol>
-                <li>
-                  Позвоните или напишите нам и сообщите свой адрес
-                </li>
-                <li>
-                  Встречайте нашего специалиста-оценщика
-                </li>
-                <li>
-                  Получите деньги за ненужные шины!
-                </li>
-              </ol>
-              <div class="detail__main-informer informer">
-                <p class="informer__txt title-nr">
-                  1-ый шаг к справедливой оплате <br>
-                  – вызовите оценщика!
-                </p>
-                <button type="button" class="informer__btn btn btn-nr btn-danger">
-                  Вызвать оценщика
-                </button>
+            <div class="callback-form__item callback-form__item--checkbox">
+              <div class="checkbox callback-form__item-checkbox">
+                <input
+                  type="checkbox"
+                  name="callback-checkbox"
+                  class="checkbox__input"
+                  id="checkbox__input"
+                >
+                <label for="checkbox__input" class="checkbox__label color-secondary text-nr">
+                  Я согласен(а) на обработку персональных данных <a href="#" class="link-bot color-main">подробнее</a>
+                </label>
               </div>
-              <p class="color-secondary">
-                Быстрый, удобный, выгодный сервис скупка шин с выездом в СВАО – ваша возможность пополнить свой бюджет прямо сейчас!
-              </p>
             </div>
-          </div>
-          <div class="detail__sec" type="button">
-            <aside class="aside">
-              <h3 class="aside__title title-md">
-                Хочу сдать шины и получить свои деньги!
-              </h3>
-              <button class="aside__btn btn btn-nr btn-danger">
-                Оставить заявку
+            <div class="callback-form__item">
+              <button type="submit" class="callback-form__button btn btn-nr btn-danger">
+                Отправить заявку
               </button>
-            </aside>
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper-content wrapper-content--mt-104 wrapper-content--mb-72">
+    <div class="container">
+      <div class="detail">
+        <div class="detail__main">
+          <div class="detail__main-item content">
+            <h2 class="content__title title-lg">
+              Как заработать на шинах?
+            </h2>
+            <p class="content__txt color-secondary">
+              Где найти новый источник дохода? В старых автошинах: воспользоваться услугой скупка шин бу от компании Shina N!
+            </p>
+            <p class="content__txt color-secondary">
+              Многие бережливые автовладельцы складируют использованные шины в гаражах, на балконах, на садовых участках. А что еще делать? Выбросить – жалко, искать покупателей – долго и хлопотно. Тогда мы найдем вас сами! Просто напишите в WhatsApp, отправьте заявку или позвоните, чтобы покупатели из компании Shina N приехали к вам и хорошо заплатили за ненужные шины бу, в зависимости от их марки и состояния. Количество от 1 штуки!
+            </p>
+          </div>
+          <div class="detail__main-item content">
+            <h2 class="content__title title-lg">
+              Цены на скупку шин в СВАО Москвы
+            </h2>
+            <table>
+              <thead>
+                <tr>
+                  <td>
+                    №
+                  </td>
+                  <td>
+                    Радиус
+                  </td>
+                  <td>
+                    Цена, руб / 1шт
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    R13
+                  </td>
+                  <td>
+                    до 500
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    R14
+                  </td>
+                  <td>
+                    до 750
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    R15
+                  </td>
+                  <td>
+                    до 1 500
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    4
+                  </td>
+                  <td>
+                    R16
+                  </td>
+                  <td>
+                    до 2 000
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    5
+                  </td>
+                  <td>
+                    R17
+                  </td>
+                  <td>
+                    до 3 500
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    6
+                  </td>
+                  <td>
+                    R18
+                  </td>
+                  <td>
+                    до 4 000
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    7
+                  </td>
+                  <td>
+                    R19
+                  </td>
+                  <td>
+                    до 4 500
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    8
+                  </td>
+                  <td>
+                    R20-22
+                  </td>
+                  <td>
+                    до 7 000
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="content__txt">
+              На расценки, по которым ведется скупка автомобильных шин, влияет и временной фактор: например, если вы сдаете покрышки для зимы в холодное время года, мы примем их по более высокой стоимости, чем в апреле-июне. Для летних шин аналогичная ситуация.
+            </p>
+          </div>
+          <div class="detail__main-item ">
+            <h2 class="detail__main-title title-lg">
+              От чего зависит стоимость скупки автомобильных шин?
+            </h2>
+            <ul class="list-unorder list-unorder--checked">
+              <li class="list-unorder__item text-lg">
+                Насколько сильно и равномерно/неравномерно изношены шины.
+              </li>
+              <li class="list-unorder__item text-lg">
+                Под каким брендом, в каком году выпущен товар.
+              </li>
+              <li class="list-unorder__item text-lg">
+                Радиус, наличие пары, сезонность резины, сохранность шипов.
+              </li>
+            </ul>
+          </div>
+          <div class="detail__main-item">
+            <h2 class="detail__main-title title-lg">
+              Какие ограничения действуют на выкуп шин б/у?
+            </h2>
+            <ul class="list-unorder list-unorder--unchecked">
+              <li class="list-unorder__item text-lg">
+                Наличие грыж, порезов на боковых поверхностях, множественных проколов протектора (свыше 5) или следов ремонта данных повреждений.
+              </li>
+              <li class="list-unorder__item text-lg">
+                Особенности износа протектора: с отдельными проплешинами и потертостями, скосами, до самого индикатора.
+              </li>
+              <li class="list-unorder__item text-lg">
+                Дата выпуска более 7 лет назад.
+              </li>
+            </ul>
+          </div>
+          <div class="detail__main-item">
+            <h2 class="detail__main-title title-lg">
+              Как сдать старые шины в Shina N?
+            </h2>
+            <ol>
+              <li>
+                Позвоните или напишите нам и сообщите свой адрес
+              </li>
+              <li>
+                Встречайте нашего специалиста-оценщика
+              </li>
+              <li>
+                Получите деньги за ненужные шины!
+              </li>
+            </ol>
+            <div class="detail__main-informer informer">
+              <p class="informer__txt title-nr">
+                1-ый шаг к справедливой оплате <br>
+                – вызовите оценщика!
+              </p>
+              <button type="button" class="informer__btn btn btn-nr btn-danger">
+                Вызвать оценщика
+              </button>
+            </div>
+            <p class="color-secondary">
+              Быстрый, удобный, выгодный сервис скупка шин с выездом в СВАО – ваша возможность пополнить свой бюджет прямо сейчас!
+            </p>
           </div>
         </div>
+        <div class="detail__sec" type="button">
+          <aside class="aside">
+            <h3 class="aside__title title-md">
+              Хочу сдать шины и получить свои деньги!
+            </h3>
+            <button class="aside__btn btn btn-nr btn-danger">
+              Оставить заявку
+            </button>
+          </aside>
+        </div>
       </div>
-    </section>
-   
-  </div>
-  @@include('_footer.html')
+    </div>
+  </section>
+</div>
+@@include('_footer.html')
 </div>
 
 <script src="js/script.js"></script>
