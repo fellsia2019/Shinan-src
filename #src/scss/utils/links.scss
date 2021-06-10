@@ -5,6 +5,14 @@
   cursor: pointer;
   @include linkHover;
 
+  // .link-back
+  &-back{
+    margin-top: 60px;
+    display: inline-block;
+    @media(max-width: $smDesktopWidth) {
+      margin-top: 40px;
+    }
+  }
   // .link-bot
   &-bot{
     cursor: pointer;

@@ -1,0 +1,84 @@
+// .paging
+.paging{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .paging__prev
+  &__prev{
+    margin-right: 24px;
+    color: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    @include linkHover;
+    &:hover{
+      color: $mainFontColor;
+    }
+    @media(max-width: $tableWidth) {
+      margin-right: 10px;
+    }
+    // .paging__prev-mob
+    &-mob{
+      transform: rotate(180deg);
+    }
+  }
+  // .paging__arr
+  &__arr{
+    @media(max-width: $tableWidth) {
+      font-size: 0;
+      color: transparent;
+      user-select: none;
+      &::after{
+        display: none;
+      }
+      &:hover{
+        .paging__arr-mob{
+          fill: $default-color;
+        }
+      }
+    }
+    // .paging__arr-mob
+    &-mob{
+      @media(min-width: $tableWidth+1) {
+       display: none;
+      }
+      width: 22px;
+      height: 22px;
+      fill: $secondary-color;
+      transition: all 0.3s;
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+
+  // .paging__next
+  &__next{
+    color: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    @include linkHover;
+    &:hover{
+      color: $mainFontColor;
+    }
+  }
+  // .paging__item
+  &__item{
+    margin-right: 24px;
+    color: inherit;
+    font-weight: inhertit;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    @media(max-width: $tableWidth) {
+      margin-right: 10px;
+    }
+    // .paging__item--active
+    &--active{
+      color: $mainFontColor;
+    }
+    &:hover{
+      color: $mainFontColor;
+    }
+  }
+}

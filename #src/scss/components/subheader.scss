@@ -26,10 +26,15 @@
     max-width: 43%;
     flex: 43%;
     padding-left: 30px;
+    position: relative;
+    padding-bottom: 8px;
+    position: relative;
+    
     @media(max-width: $nrTableWidth) {
       flex: 100%;
       max-width: 100%;
-      padding-left: 0;  
+      padding-left: 0;
+      padding-bottom: 0;
     }
   }
 }
