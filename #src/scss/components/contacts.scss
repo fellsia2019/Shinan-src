@@ -1,0 +1,205 @@
+// .contacts
+
+
+.contacts{
+  display: flex;
+  // .contacts--center
+  &--center{
+    align-items: center;
+  }
+  @media(max-width: $nrTableWidth) {
+    flex-wrap: wrap;
+  }
+
+  // .contacts--left
+  &--left{
+    // .contacts__img
+    & .contacts__img{
+      width: 50vw;
+      height: 600px;
+      // .contacts__img-item
+      &-item{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $neutral-primary;
+      }
+      @media(max-width:$desktopWidth ) {
+        height: 380px;
+      }
+      @media(max-width: $smDesktopWidth) {
+        height: 320px;
+      }
+      @media(max-width: $nrTableWidth) {
+        max-width: 100%;
+        width: 100%;
+        order: 1;
+      }
+      @media(max-width: $tableWidth) {
+        height: 250px;
+      }
+    }
+  }
+
+  // .contacts--right
+  &--right{
+    justify-content: flex-end;
+    // .contacts__img
+    .contacts__img{
+      width: 50vw;
+      height: 600px;
+      order: 1;
+      @media(max-width: $lgDesktopWidth) {
+        height: calc(50vw / 1.57);
+      }
+      @media(max-width: $nrTableWidth) {
+        height: calc(100vw / 1.57);
+      }
+      // .contacts__img-item
+      &-item{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $neutral-primary;
+      }
+      @media(max-width:$desktopWidth ) {
+        height: 380px;
+      }
+      @media(max-width: $smDesktopWidth) {
+        height: 320px;
+      }
+      @media(max-width: $nrTableWidth) {
+        max-width: 100%;
+        width: 100%;
+        order: 1;
+      }
+      @media(max-width: $tableWidth) {
+        height: 250px;
+      }
+    }
+    .contacts__map{
+      order: 1;
+      margin: 0;
+    }
+    .contacts__content{
+      order: 0;
+      margin: 0;
+      margin-right: 130px;
+      @media(max-width: 1220px) {
+        margin-left: 0;
+        margin-right: auto;
+        padding-left: 24px;
+      }
+      @media(max-width: $desktopWidth) {
+        padding-left: 0;
+        margin-right: auto;
+        margin-right: 50px;
+      }
+      @media(max-width: $smDesktopWidth) {
+        padding-left: 16px;
+        margin-right: 0;
+      }
+      @media(max-width: $nrTableWidth) {
+        margin-bottom: 24px;
+        margin-right: 0;
+      }
+    }
+    @media(max-width: $desktopWidth) {
+
+    }
+  }
+  
+  // .contacts__map
+  &__map{
+    width: 50vw;
+    height: 420px;
+    @media(max-width:$desktopWidth ) {
+      height: 380px;
+    }
+    @media(max-width: $smDesktopWidth) {
+      height: 320px;
+    }
+    @media(max-width: $nrTableWidth) {
+      max-width: 100%;
+      width: 100%;
+      order: 1;
+    }
+    @media(max-width: $tableWidth) {
+      height: 250px;
+    }
+
+    // .contacts__map-item
+    &-item{
+      width: 100%;
+      height: 100%;
+    } 
+  }
+
+  // .contacts__content
+  &__content{
+    width: 100%;
+    max-width: 455px;
+    margin-left: 130px;
+    // .contacts__content--with-form
+    &--with-form{
+      max-width: 465px;
+      margin-left: 120px;
+    }
+    @media(max-width: $desktopWidth) {
+      margin-left: 50px;
+      max-width: 535px;
+    }
+    @media(max-width: $smDesktopWidth) {
+      margin-left: auto;
+      padding-right: 16px;
+      padding-left: 30px;
+    }
+    @media(max-width: $smDesktopWidth) {
+      max-width:50vw;
+      padding-left: 16px;
+    }
+    @media(max-width: $nrTableWidth) {
+      max-width: 100%;
+      order: 0;
+      margin-bottom: 24px;
+    }
+    // .contacts__content-title
+    &-title{
+      margin-bottom: 32px;
+    }
+
+    // .contacts__content-title-main
+    &-title-main{
+      margin-bottom: 40px;
+      @media(max-width: $smDesktopWidth) {
+        margin-bottom: 24px;
+      }
+    }
+    // .contacts__content-subtitle
+    &-subtitle{
+      margin-bottom: 14px;
+      
+    }
+    // .contacts__content-txt
+    &-txt{
+      margin-bottom: 32px;
+      @media(max-width: $smDesktopWidth) {
+        margin-bottom: 24px;
+      }
+    }
+    // .contacts__content-link
+    &-link{
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      @media(max-width: $smDesktopWidth) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

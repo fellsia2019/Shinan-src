@@ -1,0 +1,40 @@
+// svg styles
+
+.icon-whatsapp{
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s ease;
+  @include hoverPrimary;
+
+  &.icon-whatsapp--white{
+    fill: $mainFontColor;
+    &:hover{
+      fill: $mainFontColor;
+    }
+    &:active{
+      fill: $mainFontColor;
+    }
+  }
+}
+
+.icon-viber{
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s ease;
+  fill: #7B519D;
+  &:hover{
+    fill: #8c5eb3;
+  }
+  &:active{
+    fill: #5d377e;
+  }
+}
+
+.icon-contacts{
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  transition: all 0.5s ease;
+  fill: #3C3C3F;
+  
+}

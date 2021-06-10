@@ -1,0 +1,50 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+// libs
+@import "./utils/libs";
+
+// utils
+@import "./utils/fonts";
+@import "./utils/reset";
+@import "./utils/anim";
+@import "./utils/mixins";
+@import "./utils/vars";
+@import "./utils/container";
+@import "./utils/svg";
+@import "./utils/fonts-styles";
+@import "./utils/btn";
+@import "./utils/psevdo-styles";
+@import "./utils/links";
+@import "./utils/input";
+@import "./utils/checkbox";
+
+
+// UI
+@import "./UI/header";
+@import "./UI/footer";
+
+// components
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/social";
+@import "./components/subheader";
+@import "./components/image-full";
+@import "./components/list-unorder";
+@import "./components/how";
+@import "./components/market";
+@import "./components/contacts";
+@import "./components/callback";
+@import "./components/breadcrumbs";
+@import "./components/news";
+@import "./components/detail";
+@import "./components/content";
+@import "./components/informer";
+@import "./components/aside";

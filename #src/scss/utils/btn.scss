@@ -1,0 +1,70 @@
+// .btn
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: $mainFontColor;
+  // .btn-primary
+  &-primary{
+    background-color: $primary-color;
+    box-shadow: 0px 4px 12px rgba(39, 174, 96, 0.4);
+    &:hover{
+      background-color: $primary-hover-color;
+    }
+    &:active{
+      background-color: $primary-active-color;
+      box-shadow:0px 4px 12px rgba(39, 174, 96, 0);
+    }
+  }
+
+  // .btn-danger
+  &-danger{
+    background-color: $danger-color;
+    box-shadow: 0px 4px 12px rgba(206, 39, 66, 0.5);
+    &:hover{
+      background-color: $danger-hover-color;
+    }
+    &:active{
+      background-color: $danger-active-color;
+      box-shadow:0px 4px 12px rgba(206, 39, 66, 0);
+    }
+  }
+
+  // .btn-secondary
+  &-secondary{
+    background-color: transparent;
+    border: 2px solid $neutral-regular;
+    &:hover{
+      background-color: $default-color;
+      border-color: $default-color;
+    }
+    &:active{
+      background-color: $neutral-regular;
+      border-color: $neutral-regular;
+    }
+  }
+
+  // .btn-nr
+  &-nr{
+    padding: 10px 24px;
+  }
+
+  // .btn-social
+  &-social{
+    @media(max-width: $smTableWidth) {
+      width: 100%;
+    }
+    // .btn-social__svg
+    &__svg{
+      margin-right: 10px;
+    }
+  }
+
+
+}

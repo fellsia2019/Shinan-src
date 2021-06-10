@@ -1,0 +1,112 @@
+// .how
+
+.how{
+
+  // .how__header
+  &__header{
+    margin-bottom: 32px;
+    align-items: flex-end;
+    @media(max-width: $tableWidth){
+      margin-bottom: 24px;
+    }
+    // .how__header-title
+    &-title{
+    }
+  }
+
+  // .how__item
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: $tableWidth) {
+     flex-wrap: wrap;
+    }
+    // .how__item-main
+    &-main{
+      width: 100%;
+      flex: 630px;
+      max-width: 630px;
+      @media(max-width: $smDesktopWidth) {
+        flex: calc(100% - 330px);
+        max-width: calc(100% - 330px);
+      }
+      @media(max-width: $tableWidth) {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+
+    // .how__item-secondary
+    &-secondary{
+      width: 100%;
+      flex: 370px;
+      max-width: 370px;
+      @media(max-width: $smDesktopWidth) {
+        flex: 300px;
+        max-width: 300px;
+      }
+      @media(max-width: $tableWidth) {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  // .how__body
+  &__body{
+    // .how__body-content
+    &-content{
+      @media(max-width: $tableWidth) {
+        display: flex;
+        justify-content: space-between;
+      }
+      @media(max-width: $smTableWidth) {
+        display: block;
+      }
+
+      // .how__body-content-item
+      &-item{
+        @media(max-width: $tableWidth) {
+          flex: 250px;
+          max-width: 250px;
+        }
+        @media(max-width: $smTableWidth) {
+          flex: 100%;
+          max-width: 100%;
+          padding-right: 0;
+        }
+      }
+    }
+    // .how__body-list
+    &-list{
+      margin-bottom: 48px;
+      @media(max-width: $tableWidth) {
+        flex: calc(100% - 250px);
+        max-width: calc(100% - 250px);
+        padding-right: 30px;
+        margin-bottom: 0;
+      }
+      @media(max-width: $smTableWidth) {
+        flex: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+    // .how__body-item
+    &-item{
+      margin-bottom: 24px;
+      @media(max-width: $tableWidth) {
+        margin-bottom: 12px;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    // .how__body-title
+    &-title{
+      margin-bottom: 16px;
+    }
+  }
+}

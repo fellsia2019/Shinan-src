@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css">
+<body>
+<div id="wrapper" class="wrapper">
+  @@include('_svg_incloud.html')
+  
+  @@include('_header.html')
+  <div class="wrapper-body wrapper-body--detail">
+    @@include('_breadcrumbs.html', {
+      'link_1': 'Главная',
+      'link_2': 'Контакты'
+    })
+    <section class="wrapper-content wrapper-content--mb-80">
+      <div class="contacts contacts--right">
+        <div class="contacts__map">
+          <div id="map" class="contacts__map-item"></div>
+        </div>
+        <div class="contacts__content">
+          <h2 class="contacts__content-title title-main">
+            Контакты
+          </h2>
+          <a href="#" class="contacts__content-link link-contact color-main">
+            <svg class="icon-contacts link-contact__svg">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <p class="link-contact__txt">
+              <span class="link-contact__txt-main title-lg">
+                8 (917) 510-03-23
+                <svg class="link-contact__txt-svg icon-whatsapp">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </span>
+              <span class="link-contact__txt-main text-nr color-secondary">
+                выкуп шин, дисков, колес (менеджер Александр)
+              </span>
+            </p>
+          </a>
+          <a href="mailto:zamula_ms@mail.ru" class="contacts__content-link link-contact link-contact--email color-main">
+            <svg class="icon-contacts link-contact__svg">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+            <p class="link-contact__txt">
+              <span class="link-contact__txt-main title-lg">
+                zamula_ms@mail.ru
+              </span>
+              <span class="link-contact__txt-sec text-nr color-secondary">
+                e-mail для заявок
+              </span>
+            </p>
+          </a>
+          <a href="#" class="contacts__content-link link-contact color-main">
+            <svg class="icon-contacts link-contact__svg">
+              <use xlink:href="#icon-map"></use>
+            </svg>
+            <p class="link-contact__txt">
+              <span class="link-contact__txt-main title-lg">
+                17-й проезд Марьиной Рощи, 13с5
+              </span>
+              <span class="link-contact__txt-sec text-nr color-secondary">
+                17-й проезд Марьиной Рощи, 13с5
+              </span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper-content wrapper-content--mt-80">
+      <div class="callback"
+           style="background-image: url('./img/callback/1.png');"
+      >
+        <div class="container">
+          <div class="callback__content">
+             <h2 class="callback__content-title title-main">
+              Оставьте заявку
+             </h2>
+             <h3 class="callback__content-subtitle text color-secondary">
+                И мы свяжемся с вами в течении рабочего дня
+             </h3>
+             <form class="callback-form">
+               <div class="callback-form__item">
+                 <input 
+                  type="text" 
+                  class="callback-form__item-input input"
+                  name="callback-name"
+                  placeholder="Ваше имя"
+                >
+                </div>
+                <div class="callback-form__item">
+                  <input 
+                    type="tel" 
+                    class="callback-form__item-input input"
+                    name="callback-name"
+                    placeholder="Ваш телефон *"
+                    data-js="input-tel"
+                  >
+                </div>
+                <div class="callback-form__item">
+                  <textarea 
+                    class="callback-form__item-textarea textarea"
+                    name="callback-name"
+                    placeholder="Комментарий"
+                  ></textarea>
+                </div>
+                <div class="callback-form__item callback-form__item--checkbox">
+                  <div class="checkbox callback-form__item-checkbox">
+                    <input 
+                      type="checkbox" 
+                      name="callback-checkbox" 
+                      class="checkbox__input"
+                      id="checkbox__input"
+                    >
+                    <label for="checkbox__input" class="checkbox__label color-secondary text-nr">
+                      Я согласен(а) на обработку персональных данных <a href="#" class="link-bot color-main">подробнее</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="callback-form__item">
+                  <button type="submit" class="callback-form__button btn btn-nr btn-danger">
+                    Отправить заявку
+                  </button>
+                </div>
+             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  @@include('_footer.html')
+</div>
+
+<script src="js/script.js"></script>
+<script>
+  function initMap() {
+  var coordinates = {lat: 55.80758442055726, lng: 37.606183523823454},
+      zoom = 15,
+  
+      map = new google.maps.Map(document.getElementById('map'), {
+          center: coordinates,
+          zoom: zoom,
+          disableDefaultUI: true
+      });
+      map.setOptions({styles: styles});
+  }
+  
+  var styles = [
+    {
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#212121"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#212121"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.country",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.land_parcel",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.locality",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#bdbdbd"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#181818"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#616161"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#1b1b1b"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#2c2c2c"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#8a8a8a"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#373737"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#3c3c3c"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway.controlled_access",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#4e4e4e"
+        }
+      ]
+    },
+    {
+      "featureType": "road.local",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#616161"
+        }
+      ]
+    },
+    {
+      "featureType": "transit",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#3d3d3d"
+        }
+      ]
+    }
+  ];
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3wICkP2e5qTwoWtkWzp8QdvlcpcE7IxM&callback=initMap">
+  </script>
+</body>
+</html>

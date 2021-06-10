@@ -1,0 +1,39 @@
+// .aside
+
+.aside{
+  width: 100%;
+  border-radius: 4px;
+  background-color: $neutral-primary;
+  padding: 32px 40px;
+  @media(max-width: $desktopWidth) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media(max-width: $tableWidth) {
+    display: block;
+    text-align: center;
+    padding: 20px 16px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    border-radius: 0;
+  }
+  // .aside__title
+  &__title{
+    margin-bottom: 32px;
+    @media(max-width: $desktopWidth) {
+     margin-bottom: 0;
+     margin-right: 32px;
+    }
+    @media(max-width: $tableWidth) {
+     margin-bottom: 20px;
+     margin-right: 0;
+    }
+  }
+
+  // .aside__btn
+  &__btn{
+    @media(max-width: $smTableWidth) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// .input
+
+.input,
+.textarea{
+  border-color: transparent;
+  color:$mainFontColor;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 10px 0 12px 0;
+  border-bottom: 2px solid #383D3F;
+  transition: all 0.3s ease;
+  width: 100%;
+  &:focus{
+    border-color: $mainFontColor;
+  }
+ 
+}
+.textarea{
+  height: 90px;
+  @include scrollBarOff;
+}

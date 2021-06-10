@@ -1,0 +1,25 @@
+// psevdo styles
+
+.arr-down{
+  position: relative;
+  padding-right: 14px;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    transition: all 0.5s ease;
+    background-position:center;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-image: url('../img/svg/arr-down.svg');
+  }
+  &:hover{
+    &::before{
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}

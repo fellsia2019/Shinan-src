@@ -1,0 +1,89 @@
+// .news
+
+.news{
+
+  // .news__title
+  &__title{
+    margin-bottom: 40px;
+  }
+
+  // .news-cards
+  &-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -48px;
+    @media(max-width: $smDesktopWidth) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    // .news-cards__item
+    &__item{
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 48px;
+      width: 100%;
+      flex: calc(100% / 3);
+      max-width: calc(100% / 3);
+      @media(max-width: $smDesktopWidth) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      @media(max-width: $nrTableWidth) {
+        flex: calc(100% / 2);
+        max-width: calc(100% / 2);
+      }
+      @media(max-width: $smTableWidth) {
+        flex: 100%;
+        max-width: 100%;
+      }
+      // .news-cards__item-bg
+      &-bg{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $neutral-primary;
+        width: 100%;
+        height: 286px;
+        margin-bottom: 24px;
+        @media(max-width:$mdDesktopWidth) {
+          height: calc(((100vw / 3) - 108px) / 1.3);
+        }
+        @media(max-width: $smDesktopWidth) {
+          height: calc(((100vw / 3) - 72px) / 1.3);
+        }
+        @media(max-width: $nrTableWidth) {
+          height: calc(((100vw / 2) - 52px) / 1.3);
+          margin-bottom: 12px;
+        }
+        @media(max-width: $smTableWidth) {
+          height: calc((100vw - 52px) / 1.3);
+        }
+      }
+
+      // .news-cards__item-info
+      &-info{
+        padding-left: 16px;
+        padding-right: 16px;
+        @media(max-width: $smDesktopWidth) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      // .news-cards__item-title
+      &-title{
+        margin-bottom: 16px;
+      }
+
+      // .news-cards__item-txt
+      &-txt{
+        margin-bottom: 16px;
+        @media(max-width: $smTableWidth) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
