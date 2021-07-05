@@ -96,6 +96,7 @@
         }
       }
       @media(max-width: $smDesktopWidth) {
+        width: 100%;
         &::before{
           display: none;
         }
@@ -111,13 +112,109 @@
   min-width: 220px;
   // .list-dropdown__item
   &__item{
-    a{
+    @media(max-width: $smDesktopWidth) {
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 300px;
+        height: 1px;
+        background-color: #303032;
+      }
+    }
+    & > a{
       padding: 12px 16px;
       display: block;
       background-color: $neutral-primary;
       color: $secondary-color;
       border-bottom: 1px solid #303032;
       transition: all 0.3s ease;
+      @media(max-width: $smDesktopWidth) {
+        padding: 8px 6px;
+        border-bottom:0;
+        // position: relative;
+        // &:after{
+        //   content: "";
+        //   position: absolute;
+        //   bottom: 0;
+        //   left: -20px;
+        //   width: 300px;
+        //   height: 1px;
+        //   background-color: #303032;
+        // }
+      }
+      
+    }
+    &:last-child{
+      a{
+        border-bottom: 0;
+      }
+    }
+    &:hover{
+      @media(min-width: $smDesktopWidth+1) {
+        & .list-category{
+          max-height: 200px;
+          opacity: 1;
+          pointer-events: unset;
+        }
+      }
+      & > a{
+        @media(min-width: $smDesktopWidth+1) {
+          background-color: $danger-color;
+          color: $mainFontColor;
+        }
+      }
+    }
+  }
+}
+.list-category{
+  @include scrollBarOff;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+  
+  width: 100%;
+  border-top: 1px solid #303032;
+  background-color: $neutral-primary;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+  @media(min-width: $smDesktopWidth+1) {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+  }
+  @media(max-width: $smDesktopWidth) {
+    border-top: 0;
+  }
+  // .list-category__item
+  &__item{
+    border-bottom: 1px solid #303032;
+    @media(max-width: $smDesktopWidth) {
+      border: 0;
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 300px;
+        height: 1px;
+        background-color: #303032;
+      }
+    }
+    // .list-category__item a
+    a{
+      padding: 4px 20px;
+      display: block;
+      background-color: $neutral-primary;
+      color: $secondary-color;
+      border-bottom: 1px solid #303032;
+      transition: all 0.3s ease;
+
+      font-size: 14px;
+      line-height: 1.25;
       @media(max-width: $smDesktopWidth) {
         padding: 8px 12px;
         border-bottom:0;
