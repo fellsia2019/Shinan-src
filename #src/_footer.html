@@ -54,3 +54,158 @@
     </div>
   </div>
 </footer>
+<div class="modals">
+  <div class="modal-callback modal" data-js="modal-callback">
+    <div class="modal-callback__wrapper modal-wrapper ">
+        <div class="modal-callback__content modal-content">
+          <div class="modal-callback__body">
+            <span class="modal-callback__body-close" data-js="modal-callback-close"></span>
+            <h2 class="callback__content-title title-main">
+              Оставьте заявку
+            </h2>
+            <h3 class="callback__content-subtitle text color-secondary">
+              И мы свяжемся с вами в течении рабочего дня
+            </h3>
+            <form class="callback-form">
+              <div class="callback-form__item">
+                <input
+                type="text"
+                class="callback-form__item-input input"
+                name="callback-name-1"
+                placeholder="Ваше имя"
+                data-validate="field"
+              >
+              </div>
+              <div class="callback-form__item">
+                <input
+                  type="tel"
+                  class="callback-form__item-input input"
+                  name="callback-tel-1"
+                  placeholder="Ваш телефон *"
+                  data-js="input-tel"
+                  data-validate="field"
+                >
+              </div>
+              <div class="callback-form__item">
+                <textarea
+                  class="callback-form__item-textarea textarea"
+                  name="callback-textarea-1"
+                  placeholder="Комментарий"
+                ></textarea>
+              </div>
+              <div class="callback-form__item callback-form__item--checkbox">
+                <div class="checkbox callback-form__item-checkbox">
+                  <input
+                    type="checkbox"
+                    name="callback-checkbox-1"
+                    class="checkbox__input"
+                    id="checkbox__input-1"
+                    data-validate="checkbox"
+                  >
+                  <label for="checkbox__input-1" class="checkbox__label color-secondary text-nr">
+                    Я согласен(а) на обработку персональных данных <a href="#" class="link-bot color-main">подробнее</a>
+                  </label>
+                </div>
+              </div>
+              <div class="callback-form__item">
+                <button type="submit" class="callback-form__button btn btn-nr btn-danger">
+                  Отправить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-callback__click-close modal-close"
+          data-js="modal-callback-close"
+        ></div>
+    </div>
+  </div>
+  <div class="modal-callback modal" data-js="modal-buying">
+    <div class="modal-callback__wrapper modal-wrapper ">
+        <div class="modal-callback__content modal-content">
+          <div class="modal-callback__body modal-body">
+            <span class="modal-callback__body-close" data-js="modal-buying-close"></span>
+            <h2 class="callback__content-title title-main">
+              Онлайн-заявка
+            </h2>
+            <form class="callback-form">
+              <div class="callback-form__item">
+                <input
+                type="text"
+                class="callback-form__item-input input"
+                name="callback-name-2"
+                placeholder="Ваше имя"
+                data-validate="field"
+              >
+              </div>
+              <div class="callback-form__item">
+                <input
+                  type="tel"
+                  class="callback-form__item-input input"
+                  name="callback-tel-2"
+                  placeholder="Ваш телефон *"
+                  data-js="input-tel"
+                  data-validate="field"
+                >
+              </div>
+              <div class="callback-form__item">
+                <input
+                  type="text"
+                  class="callback-form__item-input input"
+                  name="callback-item-2"
+                  placeholder="Что сдаёте? (шины/диски/колеса)"
+                  data-validate="field"
+              >
+              </div>
+              <div class="callback-form__item">
+                <select 
+                  name="select-radius" 
+                  id="select-radius"
+                  data-js="select2-init"
+                  >
+                  <option value="R13">R13</option>
+                  <option value="R14">R14</option>
+                  <option value="R15">R15</option>
+                  <option value="R16">R16</option>
+                  <option value="R17">R17</option>
+                  <option value="R18">R18</option>
+                  <option value="R19">R19</option>
+                  <option value="R20-22">R20-22</option>
+                </select>
+              </div>
+              <div class="callback-form__item">
+                <textarea
+                  class="callback-form__item-textarea textarea"
+                  name="callback-textarea-2"
+                  placeholder="Ваш адрес"
+                  data-validate="field"
+                ></textarea>
+              </div>
+              <div class="callback-form__item callback-form__item--checkbox">
+                <div class="checkbox callback-form__item-checkbox">
+                  <input
+                    type="checkbox"
+                    name="callback-checkbox-2"
+                    class="checkbox__input"
+                    id="checkbox__input-2"
+                    data-validate="checkbox"
+                  >
+                  <label for="checkbox__input-2" class="checkbox__label color-secondary text-nr">
+                    Я согласен(а) на обработку персональных данных <a href="#" class="link-bot color-main">подробнее</a>
+                  </label>
+                </div>
+              </div>
+              <div class="callback-form__item">
+                <button type="submit" class="callback-form__button btn btn-nr btn-danger">
+                  Отправить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-callback__click-close modal-close"
+          data-js="modal-buying-close"
+        ></div>
+    </div>
+  </div>
+</div>

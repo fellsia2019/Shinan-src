@@ -48,9 +48,16 @@
     max-width: 328px;
     flex: 328px;
     margin-left: auto;
+    @media(max-width: $desktopWidth) {
+      flex: calc(100% - 360px);
+      max-width:calc(100% - 360px);
+      margin-left: 0;
+      margin-right: auto;
+    }
     @media(max-width: $smDesktopWidth) {
       flex: 100%;
       max-width: 100%;
+      
     }
   }
 }

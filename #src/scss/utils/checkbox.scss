@@ -6,6 +6,13 @@
   &__input{
     display: none;
     opacity: 0;
+    &.error{
+      & + .checkbox__label{
+        &::after{
+          border-color: $danger-color;
+        }
+      }
+    }
     &:checked + .checkbox__label{
       &::after{
         border-color: $danger-color;
@@ -23,6 +30,7 @@
     padding-left: 32px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
     &::after{
       content:"";
       position: absolute;

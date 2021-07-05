@@ -1,8 +1,12 @@
 function initMap() {
   var coordinates = {lat: 55.80758442055726, lng: 37.606183523823454},
       zoom = 15,
-      img = document.querySelector("[data-js='map-image']").getAttribute("src"),
-      content = `
+      checkImg = document.querySelector("[data-js='map-image']"),
+      img;
+  if (checkImg != null) {
+    img = checkImg.getAttribute("src")
+  }
+  var content = `
       <div class="map-popup">
         <h3 class="map-popup__title title-md color-main">
           17-й проезд Марьиной Рощи, 13с5
@@ -27,6 +31,7 @@ function initMap() {
       infowindow = new google.maps.InfoWindow({
         content: content
       });
+
       map.setOptions({styles: styles});
       marker.addListener('click', () => infowindow.open(map, marker));
 
